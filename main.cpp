@@ -33,5 +33,11 @@ int main() {
     int y;      // holds temp year released
     string s;   // holds temp screenwriter
 
+    if (fin.good()) {
+        while (fin >> t) {
+            
+        }
+    }
+
     return 0;
 }
