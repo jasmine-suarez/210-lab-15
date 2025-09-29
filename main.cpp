@@ -34,8 +34,8 @@ int main() {
     string s;   // holds temp screenwriter
 
     if (fin.good()) {
-        while (fin >> t) {
-            
+        while () {
+
         }
     }
 
