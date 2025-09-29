@@ -34,9 +34,23 @@ int main() {
     string s;   // holds temp screenwriter
 
     if (fin.good()) {
-        while () {
-
+        while (getline(fin, s)) {
+            fin >> y;
+            fin.ignore();
+            getline(fin, t);
+            Movie temp;
+            temp.setTitle(t);
+            temp.setYrReleased(y);
+            temp.setScreenWriter(s);
+            movies.push_back(temp);
         }
+        fin.close();
+    }
+    else
+        cout << "Input file not found.\n";
+
+    for (auto val : movies) {
+        val.print();
     }
 
     return 0;
